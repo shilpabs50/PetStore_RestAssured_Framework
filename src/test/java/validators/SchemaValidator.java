@@ -21,7 +21,7 @@ public class SchemaValidator {
 		response
 		.then()
 		.assertThat()
-		.body(matchesJsonSchemaInClasspath("schemas\\orderSchema.json"));
+		.body(matchesJsonSchemaInClasspath("schemas/orderSchema.json"));
 		
 		
 	}
@@ -35,7 +35,7 @@ public class SchemaValidator {
 		response
 		.then()
 		.assertThat()
-		.body(matchesJsonSchemaInClasspath("schemas\\deleteOrderSchema.json"));
+		.body(matchesJsonSchemaInClasspath("schemas/deleteOrderSchema.json"));
 		
 		
 	}

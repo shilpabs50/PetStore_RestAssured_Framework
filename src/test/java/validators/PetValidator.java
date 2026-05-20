@@ -18,7 +18,7 @@ public class PetValidator {
 		response
 		.then()
 		.assertThat()
-		.body(matchesJsonSchemaInClasspath("schemas\\petSchema.json"));
+		.body(matchesJsonSchemaInClasspath("schemas/petSchema.json"));
 		
 		
 		
