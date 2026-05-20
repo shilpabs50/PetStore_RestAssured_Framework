@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PetStore Automation Suite"
+             parallel="methods"
+             thread-count="5">             
+             
+
+  <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="retry.RetryTransformer"></listener>
+    </listeners>
+    
+    
+    <test name="Pet Tests">
+
+        <classes>
+            <class name="tests.PetE2ETest"/>
+            <class name="tests.testTimeouts"/>
+            <class name="tests.PetPOJOTest"/>
+            <class name="tests.NegativePostPayloadTest"/>
+            <class name="tests.PetWorkflowDDTTest"/>
+            <class name="tests.PetNegativeWorkflowTest"/>
+        </classes>
+
+    </test>
+    
+  
+     <test name="Order Tests">
+
+        <classes>
+            <class name="tests.OrderE2EFlowTest"/>
+            <class name="tests.createOrderNegativePayLoadTest"/>
+            <class name="tests.OrderWorkflowNegativeTest"></class>
+            
+            
+        </classes>
+
+    </test>
+    
+    <!--<test name="Smoke Tests">
+
+        <classes>
+            <class name="tests.PetE2ETest"/>
+            <class name="tests.OrderE2EFlowTest"/>
+           
+            
+            
+        </classes>
+
+    </test>
+    
+    
+     <test name="Regression Tests">
+
+        <classes>
+            <class name="tests.PetPOJOTest"/>
+            <class name="tests.NegativePostPayloadTest"/>
+            <class name="tests.PetWorkflowDDTTest"/>
+            <class name="tests.PetNegativeWorkflowTest"/>
+            <class name="tests.createOrderNegativePayLoadTest"/>
+            <class name="tests.OrderWorkflowNegativeTest"/>
+            
+            
+        </classes>
+
+    </test>-->
+    
+  <!--<test name="Test">
+  <packages>
+            <package name="tests"/>
+  </packages>
+  </test>  Test -->
+  
+  
+</suite> <!-- Suite -->

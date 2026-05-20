@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+
+    <Appenders>
+
+        <Console name="Console" target="SYSTEM_OUT">
+
+            <PatternLayout
+             pattern="%d %p %c [%t] %m%n"/>
+             <PatternLayout 
+             pattern="%d [%t] %-5level %logger - %msg%n"/>
+             <PatternLayout
+             pattern="%d [%t] %-5level %c - %msg%n"/>
+
+        </Console>
+
+        <File name="File"
+         fileName="logs/automation.log">
+
+            <PatternLayout
+             pattern="%d %p %c [%t] %m%n"/>
+
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="info">
+
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+
+        </Root>
+
+    </Loggers>
+
+</Configuration>

@@ -1,0 +1,36 @@
+name: PetStore Smoke API Tests
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+
+  smoke-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Project
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Verify Maven
+        run: mvn -version
+
+      - name: Install Dependencies
+        run: mvn clean install -DskipTests
+
+      - name: Execute Smoke Tests
+        run: mvn test -Dgroups=smoke
