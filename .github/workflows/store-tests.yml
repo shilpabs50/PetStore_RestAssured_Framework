@@ -3,10 +3,9 @@ name: PetStore Store API Tests
 on:
   workflow_dispatch:
 
-
 jobs:
 
-  smoke-tests:
+  store-tests:
 
     runs-on: ubuntu-latest
 
@@ -18,30 +17,22 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: 17
 
       - name: Verify Maven
         run: mvn -version
 
-      - name: Install Dependencies
-        run: mvn clean install -DskipTests
-
       - name: Execute Store Tests
-        run: mvn test -Dgroups=store
+        run: mvn clean test -Dgroups=store
 
       - name: Generate Allure Report
-	if: always()
+        if: always()
         run: mvn allure:report
 
       - name: Upload Allure Report
-	if: always()
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
+          name: store-allure-report
           path: target/site/allure-maven-plugin
-
-
-
-
-     

@@ -9,6 +9,8 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+
 jobs:
 
   smoke-tests:
@@ -23,30 +25,22 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: 17
 
       - name: Verify Maven
         run: mvn -version
 
-      - name: Install Dependencies
-        run: mvn clean install -DskipTests
-
       - name: Execute Smoke Tests
-        run: mvn test -Dgroups=smoke
+        run: mvn clean test -Dgroups=smoke
 
       - name: Generate Allure Report
-	if: always()
+        if: always()
         run: mvn allure:report
 
       - name: Upload Allure Report
-	if: always()
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
+          name: smoke-allure-report
           path: target/site/allure-maven-plugin
-
-
-
-
-     

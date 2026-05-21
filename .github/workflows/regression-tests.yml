@@ -17,8 +17,8 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: 17
 
       - name: Verify Maven
         run: mvn -version
@@ -30,12 +30,12 @@ jobs:
         run: mvn test -Dgroups=regression
 
       - name: Generate Allure Report
-	if: always()
+        if: always()
         run: mvn allure:report
 
       - name: Upload Allure Report
-	if: always()
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
+          name: regression-allure-report
           path: target/site/allure-maven-plugin
