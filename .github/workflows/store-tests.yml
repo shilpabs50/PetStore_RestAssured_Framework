@@ -1,13 +1,8 @@
 name: PetStore Store API Tests
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
-  pull_request:
-    branches:
-      - main
 
 jobs:
 
@@ -32,13 +27,15 @@ jobs:
       - name: Install Dependencies
         run: mvn clean install -DskipTests
 
-      - name: Execute Smoke Tests
+      - name: Execute Store Tests
         run: mvn test -Dgroups=store
 
       - name: Generate Allure Report
+	if: always()
         run: mvn allure:report
 
       - name: Upload Allure Report
+	if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
