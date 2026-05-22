@@ -1,0 +1,5 @@
+Method: PUT
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":219,"category":{"id":76001,"name":"scorpion"},"name":"Ruby","photoUrls":["www.zane-harris.info"],"tags":[{"id":8960057,"name":"Samoyed"}],"status":"pending"}

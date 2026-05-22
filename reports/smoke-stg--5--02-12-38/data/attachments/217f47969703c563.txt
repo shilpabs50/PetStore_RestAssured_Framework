@@ -1,0 +1,5 @@
+Method: PUT
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":41,"category":{"id":50264402,"name":"salmon"},"name":"Rosie","photoUrls":["www.brigitte-jacobs.org"],"tags":[{"id":79,"name":"Irish Spaniel"}],"status":"sold"}

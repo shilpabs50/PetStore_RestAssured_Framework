@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+"{\n  \"id\" : 2373,\n  \"category\" : {\n    \"id\" : 88,\n    \"name\" : \"gnu\"\n  },\n  \"name\" : \"Sandy\",\n  \"photoUrls\" : [ \"www.shon-leuschke.com\" ],\n  \"tags\" : [ {\n    \"id\" : 668,\n    \"name\" : \"Labrador\"\n  } ],\n  \"status\" : \"wrong\"\n}"

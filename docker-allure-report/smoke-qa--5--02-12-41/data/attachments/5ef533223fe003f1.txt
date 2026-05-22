@@ -1,0 +1,8 @@
+DELETE Status Code: 200
+
+DELETE Pet Response: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "219"
+}

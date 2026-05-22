@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+"{\n  \"id\" : 766165,\n  \"category\" : {\n    \"id\" : -10,\n    \"name\" : \"chinchilla\"\n  },\n  \"name\" : \"Murphy\",\n  \"photoUrls\" : [ \"www.breanna-yundt.io\" ],\n  \"tags\" : [ {\n    \"id\" : 355479,\n    \"name\" : \"Redbone\"\n  } ],\n  \"status\" : \"available\"\n}"

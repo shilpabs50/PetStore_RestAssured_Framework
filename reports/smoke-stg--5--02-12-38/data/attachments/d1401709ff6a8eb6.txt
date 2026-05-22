@@ -1,0 +1,10 @@
+GET Status Code: 200
+
+ GET Response Body: {
+    "id": 64,
+    "petId": 701,
+    "quantity": 7,
+    "shipDate": "2026-05-22T07:08:24.185+0000",
+    "status": "delivered",
+    "complete": false
+}

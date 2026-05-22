@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":15520,"category":{"id":423,"name":"snail"},"name":"Sasha","photoUrls":["www.marlyn-nitzsche.info"],"tags":[{"id":6,"name":"Maltese"}],"status":"available"}

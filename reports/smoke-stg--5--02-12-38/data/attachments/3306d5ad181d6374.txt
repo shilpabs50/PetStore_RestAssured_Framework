@@ -1,0 +1,2 @@
+Method: DELETE
+URL: https://petstore.swagger.io/v2/pet/7860088

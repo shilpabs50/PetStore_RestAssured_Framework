@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+"{\n  \"id\" : 831802,\n  \"category\" : {\n    \"id\" : 7453962,\n    \"name\" : \"ant\"\n  },\n  \"name\" : null,\n  \"photoUrls\" : [ \"www.wilton-kuvalis.name\" ],\n  \"tags\" : [ {\n    \"id\" : 40403383,\n    \"name\" : \"Blenheim Spaniel\"\n  } ],\n  \"status\" : \"available\"\n}"

@@ -1,0 +1,21 @@
+GET Status Code: 200
+
+GET Response Body:
+{
+    "id": 7860088,
+    "category": {
+        "id": 99915,
+        "name": "skunk"
+    },
+    "name": "Sammy",
+    "photoUrls": [
+        "www.damien-stroman.com"
+    ],
+    "tags": [
+        {
+            "id": 35,
+            "name": "Kerryblue Terrier"
+        }
+    ],
+    "status": "available"
+}

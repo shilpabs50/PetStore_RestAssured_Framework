@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+"{\n  \"id\" : 5590075,\n  \"category\" : {\n    \"id\" : 11,\n    \"name\" : \"scorpion\"\n  },\n  \"name\" : \"\",\n  \"photoUrls\" : [ \"www.kyra-waelchi.name\" ],\n  \"tags\" : [ {\n    \"id\" : 596,\n    \"name\" : \"Italian Greyhound\"\n  } ],\n  \"status\" : \"available\"\n}"

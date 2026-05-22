@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":582,"category":{"id":7598122,"name":"dinosaur"},"name":"Bo","photoUrls":["www.christeen-adams.name"],"tags":[{"id":5,"name":"Stbernard"}],"status":"available"}

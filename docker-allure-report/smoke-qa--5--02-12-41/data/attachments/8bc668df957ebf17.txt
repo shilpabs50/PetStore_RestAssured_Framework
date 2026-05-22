@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 766165,
+    "category": {
+        "id": -10,
+        "name": "chinchilla"
+    },
+    "name": "Murphy",
+    "photoUrls": [
+        "www.breanna-yundt.io"
+    ],
+    "tags": [
+        {
+            "id": 355479,
+            "name": "Redbone"
+        }
+    ],
+    "status": "available"
+}

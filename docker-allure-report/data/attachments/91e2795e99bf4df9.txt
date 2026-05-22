@@ -1,0 +1,9 @@
+POST Status Code: 200
+
+ Create Order POST Response Body: {
+    "id": 9818,
+    "petId": 23287,
+    "quantity": 5,
+    "shipDate": "2026-05-22T06:54:50.564+0000",
+    "complete": true
+}

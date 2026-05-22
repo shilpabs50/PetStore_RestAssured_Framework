@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":4078,"category":{"id":68081,"name":"ox"},"name":"Sandy","photoUrls":["www.sung-goldner.com"],"tags":[{"id":2,"name":"Kuvasz"}],"status":"available"}

@@ -1,0 +1,21 @@
+PUT Status Code: 200
+
+PUT Update Pet Response: 
+{
+    "id": 250,
+    "category": {
+        "id": 96,
+        "name": "locust"
+    },
+    "name": "Rocky",
+    "photoUrls": [
+        "www.dale-conn.io"
+    ],
+    "tags": [
+        {
+            "id": 96775997,
+            "name": "Pomeranian"
+        }
+    ],
+    "status": "sold"
+}

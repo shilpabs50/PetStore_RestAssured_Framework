@@ -1,0 +1,5 @@
+Method: PUT
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":250,"category":{"id":96,"name":"locust"},"name":"Rocky","photoUrls":["www.dale-conn.io"],"tags":[{"id":96775997,"name":"Pomeranian"}],"status":"sold"}

@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 15520,
+    "category": {
+        "id": 423,
+        "name": "snail"
+    },
+    "name": "Sasha",
+    "photoUrls": [
+        "www.marlyn-nitzsche.info"
+    ],
+    "tags": [
+        {
+            "id": 6,
+            "name": "Maltese"
+        }
+    ],
+    "status": "available"
+}

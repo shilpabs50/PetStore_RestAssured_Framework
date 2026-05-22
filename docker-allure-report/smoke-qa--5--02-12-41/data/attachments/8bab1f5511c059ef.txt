@@ -1,0 +1,3 @@
+Test Name: validatePetusingPOJO
+Status: PASSED
+Execution time: 2663 ms

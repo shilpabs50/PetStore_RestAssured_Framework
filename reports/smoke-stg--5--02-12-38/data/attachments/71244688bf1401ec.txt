@@ -1,0 +1,3 @@
+DELETE Status Code: 404
+
+DELETE Pet Response: 

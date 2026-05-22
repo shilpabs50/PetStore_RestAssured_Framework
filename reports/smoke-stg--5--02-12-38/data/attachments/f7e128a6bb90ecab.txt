@@ -1,0 +1,20 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 831802,
+    "category": {
+        "id": 7453962,
+        "name": "ant"
+    },
+    "photoUrls": [
+        "www.wilton-kuvalis.name"
+    ],
+    "tags": [
+        {
+            "id": 40403383,
+            "name": "Blenheim Spaniel"
+        }
+    ],
+    "status": "available"
+}

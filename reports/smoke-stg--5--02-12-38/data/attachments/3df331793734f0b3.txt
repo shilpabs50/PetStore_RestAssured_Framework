@@ -1,0 +1,21 @@
+GET Status Code: 200
+
+GET Response Body:
+{
+    "id": 1511,
+    "category": {
+        "id": 7,
+        "name": "whale"
+    },
+    "name": "Sadie",
+    "photoUrls": [
+        "www.vito-keeling.io"
+    ],
+    "tags": [
+        {
+            "id": 313,
+            "name": "Shihtzu"
+        }
+    ],
+    "status": "available"
+}

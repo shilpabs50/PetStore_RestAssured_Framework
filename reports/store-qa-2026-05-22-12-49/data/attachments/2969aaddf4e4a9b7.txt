@@ -1,0 +1,2 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/store/order

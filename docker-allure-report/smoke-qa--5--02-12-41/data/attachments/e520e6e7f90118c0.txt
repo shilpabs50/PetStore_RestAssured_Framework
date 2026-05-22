@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 9023686,
+    "category": {
+        "id": 21,
+        "name": "jackal"
+    },
+    "name": "Milo",
+    "photoUrls": [
+        "www.evelia-macgyver.org"
+    ],
+    "tags": [
+        {
+            "id": 969208183,
+            "name": "Rottweiler"
+        }
+    ],
+    "status": "wrong"
+}

@@ -1,0 +1,21 @@
+PUT Status Code: 200
+
+PUT Update Pet Response: 
+{
+    "id": 4018237,
+    "category": {
+        "id": 3308,
+        "name": "wildebeest"
+    },
+    "name": "Ruby",
+    "photoUrls": [
+        "www.richard-reichert.io"
+    ],
+    "tags": [
+        {
+            "id": 87273793,
+            "name": "Basset Hound"
+        }
+    ],
+    "status": "sold"
+}

@@ -1,0 +1,21 @@
+PUT Status Code: 200
+
+PUT Update Pet Response: 
+{
+    "id": 7666,
+    "category": {
+        "id": 5530,
+        "name": "serval"
+    },
+    "name": "Casey",
+    "photoUrls": [
+        "www.jovan-koch.net"
+    ],
+    "tags": [
+        {
+            "id": 934545,
+            "name": "English Hound"
+        }
+    ],
+    "status": "sold"
+}

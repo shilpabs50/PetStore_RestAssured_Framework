@@ -1,0 +1,5 @@
+Method: PUT
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":1609,"category":{"id":46424,"name":"minnow"},"name":"Bear","photoUrls":["www.wynona-bergnaum.info"],"tags":[{"id":57948,"name":"English Setter"}],"status":"sold"}

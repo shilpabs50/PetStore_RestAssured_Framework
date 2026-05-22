@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+"{\n  \"id\" : 9023686,\n  \"category\" : {\n    \"id\" : 21,\n    \"name\" : \"jackal\"\n  },\n  \"name\" : \"Milo\",\n  \"photoUrls\" : [ \"www.evelia-macgyver.org\" ],\n  \"tags\" : [ {\n    \"id\" : 969208183,\n    \"name\" : \"Rottweiler\"\n  } ],\n  \"status\" : \"wrong\"\n}"

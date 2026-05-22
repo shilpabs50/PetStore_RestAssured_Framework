@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 299,
+    "category": {
+        "id": 62,
+        "name": "badger"
+    },
+    "name": "Lucy",
+    "photoUrls": [
+        "www.selene-wuckert.net"
+    ],
+    "tags": [
+        {
+            "id": 45384,
+            "name": "Borzoi"
+        }
+    ],
+    "status": "available"
+}

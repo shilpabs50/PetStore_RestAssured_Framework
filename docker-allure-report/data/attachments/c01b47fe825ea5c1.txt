@@ -1,0 +1,6 @@
+GET Status Code: 404
+
+ GET Response Body: <apiResponse>
+  <message>null for uri: http://petstore.swagger.io/v2/store/inventory/abc/1234</message>
+  <type>unknown</type>
+</apiResponse>

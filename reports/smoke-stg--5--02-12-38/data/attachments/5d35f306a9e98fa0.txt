@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 4,
+    "category": {
+        "id": 95,
+        "name": "cheetah"
+    },
+    "name": "Belle",
+    "photoUrls": [
+        "www.paul-murray.com"
+    ],
+    "tags": [
+        {
+            "id": 246282,
+            "name": "Toy Poodle"
+        }
+    ],
+    "status": "available"
+}

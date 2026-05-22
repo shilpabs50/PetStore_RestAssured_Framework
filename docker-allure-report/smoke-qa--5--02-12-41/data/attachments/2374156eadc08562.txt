@@ -1,0 +1,21 @@
+GET Status Code: 200
+
+GET Response Body:
+{
+    "id": 250,
+    "category": {
+        "id": 96,
+        "name": "locust"
+    },
+    "name": "Rocky",
+    "photoUrls": [
+        "www.dale-conn.io"
+    ],
+    "tags": [
+        {
+            "id": 96775997,
+            "name": "Pomeranian"
+        }
+    ],
+    "status": "pending"
+}

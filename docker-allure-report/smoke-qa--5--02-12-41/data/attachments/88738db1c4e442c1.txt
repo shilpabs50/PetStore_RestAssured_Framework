@@ -1,0 +1,21 @@
+GET Status Code: 200
+
+GET Response Body:
+{
+    "id": 219,
+    "category": {
+        "id": 76001,
+        "name": "scorpion"
+    },
+    "name": "Ruby",
+    "photoUrls": [
+        "www.zane-harris.info"
+    ],
+    "tags": [
+        {
+            "id": 8960057,
+            "name": "Samoyed"
+        }
+    ],
+    "status": "available"
+}

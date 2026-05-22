@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":4018237,"category":{"id":3308,"name":"wildebeest"},"name":"Ruby","photoUrls":["www.richard-reichert.io"],"tags":[{"id":87273793,"name":"Basset Hound"}],"status":"available"}

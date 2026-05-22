@@ -1,0 +1,21 @@
+GET Status Code: 200
+
+GET Response Body:
+{
+    "id": 76,
+    "category": {
+        "id": 8,
+        "name": "hedgehog"
+    },
+    "name": "Daisy",
+    "photoUrls": [
+        "www.abdul-prosacco.info"
+    ],
+    "tags": [
+        {
+            "id": 8223689,
+            "name": "Affenpinscher"
+        }
+    ],
+    "status": "pending"
+}

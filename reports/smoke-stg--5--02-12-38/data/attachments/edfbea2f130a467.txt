@@ -1,0 +1,21 @@
+PUT Status Code: 200
+
+PUT Update Pet Response: 
+{
+    "id": 76,
+    "category": {
+        "id": 8,
+        "name": "hedgehog"
+    },
+    "name": "Daisy",
+    "photoUrls": [
+        "www.abdul-prosacco.info"
+    ],
+    "tags": [
+        {
+            "id": 8223689,
+            "name": "Affenpinscher"
+        }
+    ],
+    "status": "sold"
+}

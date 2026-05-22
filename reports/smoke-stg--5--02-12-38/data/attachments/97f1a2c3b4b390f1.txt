@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 76,
+    "category": {
+        "id": 8,
+        "name": "hedgehog"
+    },
+    "name": "Daisy",
+    "photoUrls": [
+        "www.abdul-prosacco.info"
+    ],
+    "tags": [
+        {
+            "id": 8223689,
+            "name": "Affenpinscher"
+        }
+    ],
+    "status": "pending"
+}

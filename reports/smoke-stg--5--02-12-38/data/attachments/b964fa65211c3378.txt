@@ -1,0 +1,13 @@
+GET Status Code: 200
+
+ GET Response Body: {
+    "sold": 40,
+    "AAA": 3,
+    "string": 383,
+    "invalid_status": 4,
+    "pending": 9,
+    "available": 522,
+    "Available": 1,
+    "peric": 2,
+    "wrong": 1
+}

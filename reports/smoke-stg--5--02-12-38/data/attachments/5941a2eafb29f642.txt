@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 5590075,
+    "category": {
+        "id": 11,
+        "name": "scorpion"
+    },
+    "name": "",
+    "photoUrls": [
+        "www.kyra-waelchi.name"
+    ],
+    "tags": [
+        {
+            "id": 596,
+            "name": "Italian Greyhound"
+        }
+    ],
+    "status": "available"
+}

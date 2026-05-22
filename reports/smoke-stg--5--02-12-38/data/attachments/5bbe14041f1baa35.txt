@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":69,"category":{"id":39477,"name":"mink"},"name":"Tyson","photoUrls":["www.denver-bogisich.io"],"tags":[{"id":5762,"name":"Leonberg"}],"status":"available"}

@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 2373,
+    "category": {
+        "id": 88,
+        "name": "gnu"
+    },
+    "name": "Sandy",
+    "photoUrls": [
+        "www.shon-leuschke.com"
+    ],
+    "tags": [
+        {
+            "id": 668,
+            "name": "Labrador"
+        }
+    ],
+    "status": "wrong"
+}

@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 650905,
+    "category": {
+        "id": 41268313,
+        "name": "cattle"
+    },
+    "name": "",
+    "photoUrls": [
+        "www.scotty-stroman.biz"
+    ],
+    "tags": [
+        {
+            "id": 56783,
+            "name": "Border Terrier"
+        }
+    ],
+    "status": "available"
+}

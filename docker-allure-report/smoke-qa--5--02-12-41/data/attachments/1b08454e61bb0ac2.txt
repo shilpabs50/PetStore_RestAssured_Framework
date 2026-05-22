@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":299,"category":{"id":62,"name":"badger"},"name":"Lucy","photoUrls":["www.selene-wuckert.net"],"tags":[{"id":45384,"name":"Borzoi"}],"status":"available"}

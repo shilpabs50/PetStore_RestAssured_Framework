@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+"{\n  \"id\" : 50135661,\n  \"category\" : {\n    \"id\" : 91,\n    \"name\" : \"butterfly\"\n  },\n  \"name\" : null,\n  \"photoUrls\" : [ \"www.jalisa-schmeler.biz\" ],\n  \"tags\" : [ {\n    \"id\" : 8,\n    \"name\" : \"Whippet\"\n  } ],\n  \"status\" : \"available\"\n}"

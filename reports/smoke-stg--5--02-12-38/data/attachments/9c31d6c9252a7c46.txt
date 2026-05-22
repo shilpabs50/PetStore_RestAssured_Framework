@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+"{\n  \"id\" : 419742,\n  \"category\" : {\n    \"id\" : -10,\n    \"name\" : \"crocodile\"\n  },\n  \"name\" : \"Cooper\",\n  \"photoUrls\" : [ \"www.madelyn-mckenzie.info\" ],\n  \"tags\" : [ {\n    \"id\" : 872,\n    \"name\" : \"Appenzeller\"\n  } ],\n  \"status\" : \"available\"\n}"

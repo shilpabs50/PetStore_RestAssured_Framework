@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":16,"category":{"id":6937444,"name":"fish"},"name":"Bubba","photoUrls":["www.dannette-stokes.biz"],"tags":[{"id":1677311,"name":"Pekinese"}],"status":"available"}

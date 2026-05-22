@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+{"id":7860088,"category":{"id":99915,"name":"skunk"},"name":"Sammy","photoUrls":["www.damien-stroman.com"],"tags":[{"id":35,"name":"Kerryblue Terrier"}],"status":"available"}

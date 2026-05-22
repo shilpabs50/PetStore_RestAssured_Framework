@@ -1,0 +1,5 @@
+Method: POST
+URL: https://petstore.swagger.io/v2/pet
+
+Payload:
+"{\n  \"id\" : 650905,\n  \"category\" : {\n    \"id\" : 41268313,\n    \"name\" : \"cattle\"\n  },\n  \"name\" : \"\",\n  \"photoUrls\" : [ \"www.scotty-stroman.biz\" ],\n  \"tags\" : [ {\n    \"id\" : 56783,\n    \"name\" : \"Border Terrier\"\n  } ],\n  \"status\" : \"available\"\n}"

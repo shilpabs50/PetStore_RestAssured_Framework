@@ -22,25 +22,23 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v4
 
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 17
+      - name: Build Docker Image
+        run: docker build -t petstore-framework .
 
-      - name: Verify Maven
-        run: mvn -version
+      - name: Create Report Directory
+        run: mkdir -p reports
 
-      - name: Execute Smoke Tests
-        run: mvn clean test -Dgroups=smoke
-
-      - name: Generate Allure Report
-        if: always()
-        run: mvn allure:report
+      - name: Execute Smoke Tests Inside Docker
+        run: |
+          docker run --rm \
+          -e ENV=qa \
+          -e GROUP="-Dgroups=smoke" \
+          -v ${{ github.workspace }}/reports:/app/target/site/allure-maven-plugin \
+          petstore-framework
 
       - name: Upload Allure Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: smoke-allure-report
-          path: target/site/allure-maven-plugin
+          path: reports

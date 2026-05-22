@@ -1,0 +1,21 @@
+POST Status Code: 200
+
+POST Create Pet Response: 
+{
+    "id": 419742,
+    "category": {
+        "id": -10,
+        "name": "crocodile"
+    },
+    "name": "Cooper",
+    "photoUrls": [
+        "www.madelyn-mckenzie.info"
+    ],
+    "tags": [
+        {
+            "id": 872,
+            "name": "Appenzeller"
+        }
+    ],
+    "status": "available"
+}
