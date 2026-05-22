@@ -1,11 +1,32 @@
 name: PetStore API Tests
 
-on:
-  workflow_dispatch:
+workflow_dispatch:
+    inputs:
+
+      env:
+        description: 'Environment Name'
+        required: true
+        default: 'qa'
+        type: choice
+        options:
+          - qa
+          - stg
+          - prod
+
+      group:
+        description: 'Test Group'
+        required: true
+        default: 'smoke'
+        type: choice
+        options:
+          - smoke
+          - regression
+          - pet
+          - store
 
 jobs:
 
-  api-tests:
+  smoke-tests:
 
     runs-on: ubuntu-latest
 
@@ -14,25 +35,26 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v4
 
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 17
+      - name: Build Docker Image
+        run: docker build -t petstore-framework .
 
-      - name: Verify Maven
-        run: mvn -version
+      - name: Create Report Directory
+        run: mkdir -p reports
 
-      - name: Execute Tests
-        run: mvn clean test
+      - name: Execute Tests Inside Docker
+        run: |
+          docker run --rm \
+          -e ENV=${{ github.event.inputs.env || 'qa' }} \
+          -e GROUP="-Dgroups=${{ github.event.inputs.group || 'smoke' }}" \
+          -v ${{ github.workspace }}/reports:/app/target/site/allure-maven-plugin \
+          petstore-framework
 
-      - name: Generate Allure Report
-        if: always()
-        run: mvn allure:report
+      - name: Set Timestamp
+        run: echo "TIMESTAMP=$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_ENV
 
       - name: Upload Allure Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
-          path: target/site/allure-maven-plugin
+          name: ${{ github.event.inputs.group || 'smoke' }}-${{ github.event.inputs.env || 'qa' }}-${{ env.TIMESTAMP }}
+          path: reports
